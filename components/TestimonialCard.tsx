@@ -1,13 +1,7 @@
-import type { Testimonials } from '@/lib/testimonialData'
-
-type Testimonial = {
-  quote: string;
-  name: string;
-  detail: string;
-};
+import type { Testimonial } from '@/lib/testimonialData'
 
 type TestimonialCardProps = {
-  testimonial: Testimonials;
+  testimonial: Testimonial;
 };
 
 export default function TestimonialCard({
