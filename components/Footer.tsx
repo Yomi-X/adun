@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const footerLinks = [
   { label: "Menu", href: "/menu" },
   { label: "Experience", href: "/experience" },
@@ -8,7 +10,26 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1A1A1A] px-6 py-16 sm:py-20">
+    <footer className="relative bg-[#1A1A1A] px-6 py-16 sm:py-20">
+      {/* Top half of a pill-shaped footer divider */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 z-10 h-4"
+      >
+        <svg
+          viewBox="0 0 1440 16"
+          preserveAspectRatio="none"
+          className="h-full w-full"
+          fill="none"
+        >
+          <path
+            d="M0 16 C0 6 18 1 40 1 H1400 C1422 1 1440 6 1440 16"
+            stroke="#C9A961"
+            strokeWidth="1.5"
+            strokeOpacity="0.85"
+          />
+        </svg>
+      </div>
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid gap-12 border-b border-[#F5F0E8]/10 pb-12 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
           <div>
@@ -30,7 +51,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-body text-sm text-[#F5F0E8]/60 transition-colors hover:text-[#C9A961]"
+                  className="gold-hover inline-block w-fit rounded-full px-3 py-2 text-[#F5F0E8]/70 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#C9A961]/15 hover:text-[#E0C782] hover:shadow-[0_0_22px_rgba(201,169,97,0.35)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C9A961]"
                 >
                   {link.label}
                 </a>

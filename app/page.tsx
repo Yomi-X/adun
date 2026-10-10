@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
 import MenuSection from "@/components/MenuSection";
@@ -7,12 +6,10 @@ import Gallery from "@/components/GalleryPreview"
 import Testimonials from "@/components/Testimonials"
 import Reservations from "@/components/ReservationCTA"
 import LocationHours from "@/components/LocationHours"
-import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Hero />
       <Story />
       <MenuSection />
@@ -21,7 +18,6 @@ export default function Home() {
       <Testimonials />
       <Reservations />
       <LocationHours />
-      <Footer />
     </main>
   );
 }

@@ -32,3 +32,35 @@ export const signatureDishes: Dish[] = [
     image: "/images/dishes/dish-03.jpg",
   },
 ];
+
+export const additionalDishes: Dish[] = [
+  {
+    name: "Ofada Rice & Ayamase",
+    description:
+      "Earthy ofada rice served with a rich, slow-cooked Ayamase sauce, green peppers, assorted meats and boiled egg.",
+    category: "Signature",
+    price: "₦11,500",
+    image: "/images/dishes/dish-04.jpg",
+  },
+  {
+    name: "Grilled Chicken & Suya",
+    description:
+      "Charcoal-grilled chicken with tender suya-spiced beef cuts, red onions and our signature yaji pepper relish.",
+    category: "From the Grill",
+    price: "₦13,000",
+    image: "/images/dishes/dish-05.jpg",
+  },
+  {
+    name: "Puff-Puff",
+    description:
+      "Golden Nigerian sweet dough bites, cloud-soft inside, crisp outside, with a warm hint of vanilla.",
+    category: "Small Chops",
+    price: "₦4,500",
+    image: "/images/dishes/dish-06.jpg",
+  },
+];
+
+export const fullMenu: Dish[] = [
+  ...signatureDishes,
+  ...additionalDishes,
+];

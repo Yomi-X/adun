@@ -26,3 +26,25 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
 }
+
+
+/* ÀDÙN's reusable gold hover effect */
+.gold-hover {
+  transition:
+    transform 300ms ease,
+    color 300ms ease,
+    background-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .gold-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 24px 3px rgba(201, 169, 97, 0.4);
+  }
+}
+
+.gold-hover:focus-visible {
+  outline: 2px solid #C9A961;
+  outline-offset: 4px;
+}
