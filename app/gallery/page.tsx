@@ -51,7 +51,7 @@ export default function GalleryPage() {
                 index === 0 ? "lg:col-span-2" : ""
               }`}
             >
-              <div className="relative h-72 overflow-hidden bg-[#E8DFD0] sm:h-80 lg:h-96">
+              <div className="relative h-72 overflow-hidden rounded-3xl bg-[#E8DFD0] sm:h-80 lg:h-96">
                 <Image
                   src={item.src}
                   alt={item.alt}

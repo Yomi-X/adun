@@ -32,14 +32,14 @@ export default function GalleryPreview() {
 
           <a
             href="/gallery"
-            className="font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-opacity hover:opacity-70"
+            className="inline-flex items-center rounded-full border border-[#C9A961]/50 px-6 py-3 font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-colors hover:bg-[#C9A961] hover:text-[#1A1A1A]"
           >
             View Gallery →
           </a>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden md:row-span-2">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl md:row-span-2">
             <Image
               src={galleryImages[0].src}
               alt={galleryImages[0].alt}
@@ -49,7 +49,7 @@ export default function GalleryPreview() {
             />
           </div>
 
-          <div className="relative aspect-[4/3] overflow-hidden">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
             <Image
               src={galleryImages[1].src}
               alt={galleryImages[1].alt}
@@ -60,7 +60,7 @@ export default function GalleryPreview() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="relative aspect-square overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-3xl">
               <Image
                 src={galleryImages[2].src}
                 alt={galleryImages[2].alt}
@@ -70,7 +70,7 @@ export default function GalleryPreview() {
               />
             </div>
 
-            <div className="relative aspect-square overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-3xl">
               <Image
                 src={galleryImages[3].src}
                 alt={galleryImages[3].alt}

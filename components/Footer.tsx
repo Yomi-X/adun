@@ -82,7 +82,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 pt-8 text-xs text-[#F5F0E8]/40 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} ÀDÙN. All rights reserved.
+            © {new Date().getFullYear()} faY0Tech. All rights reserved.
           </p>
 
           <p>Contemporary Nigerian Dining, Reimagined.</p>

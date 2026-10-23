@@ -1,4 +1,3 @@
-
 import DishCard from "@/components/DishCard";
 import SectionHeading from "@/components/SectionHeading";
 import { signatureDishes } from "@/lib/menuData";
@@ -24,7 +23,7 @@ export default function MenuSection() {
 
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {signatureDishes.map((dish) => (
-            <DishCard key={dish.name} dish={dish} />
+            <DishCard key={dish.name} dish={dish} theme="dark" />
           ))}
         </div>
 

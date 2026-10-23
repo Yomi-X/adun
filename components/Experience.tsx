@@ -35,7 +35,7 @@ export default function Experience() {
 
           <a
             href="/experience"
-            className="mt-10 inline-flex items-center border-b border-[#C9A961] pb-2 font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-opacity hover:opacity-70"
+            className="mt-10 inline-flex items-center justify-center rounded-full [#C9A961] pb-2 font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-opacity hover:opacity-70"
           >
             Discover the Experience
           </a>

@@ -20,7 +20,7 @@ export default function ReservationCTA() {
 
         <a
           href="/reservations"
-          className="mt-10 inline-flex border border-[#C9A961] px-8 py-4 font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-colors hover:bg-[#C9A961] hover:text-[#6B1D2A]"
+          className="mt-10 inline-flex items-center justify-center rounded-full [#C9A961] px-8 py-4 font-body text-xs uppercase tracking-[0.2em] text-[#C9A961] transition-colors hover:bg-[#C9A961] hover:text-[#6B1D2A]"
         >
           Reserve Your Table
         </a>

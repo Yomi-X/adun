@@ -24,7 +24,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="bg-[#1A1A1A] px-7 py-4 text-[#F5F0E8] md:px-10">
+        <div className="overflow-hidden rounded-[2rem] bg-[#1A1A1A] px-7 py-4 text-[#F5F0E8] md:px-10">
           <div className="border-b border-white/15 py-7">
             <p className="text-xs uppercase tracking-[0.25em] text-[#C9A961]">
               Visit
@@ -75,7 +75,7 @@ export default function ContactPage() {
 
             <Link
               href="/reservations"
-              className="mt-6 inline-flex items-center gap-3 bg-[#C9A961] px-6 py-3 text-sm font-medium text-[#1A1A1A] transition-colors hover:bg-[#E0C782]"
+              className="mt-6 inline-flex items-center gap-3 rounded-full bg-[#C9A961] px-6 py-3 text-sm font-medium text-[#1A1A1A] transition-colors hover:bg-[#E0C782]"
             >
               Reserve a Table
               <span aria-hidden="true">→</span>
